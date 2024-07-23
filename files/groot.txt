@@ -1,1 +1,37 @@
-dvsdvsvdve
+A
+// Java program to create new ClassDefinition object
+import java.lang.instrument.ClassDefinition;
+
+// driver class
+public class GFG {
+	// demoClass
+	static class demoClass {
+		void msg() { System.out.println("GeeksForGeeks"); }
+	}
+	// main method
+	public static void main(String[] args)
+	{
+		try {
+
+			// creating demoClass object
+			demoClass cls = new demoClass();
+
+			// creating object of supplied class
+			Class<?> theClass = cls.getClass();
+
+			// creating array of class files
+			byte[] classFiles = { 0 };
+
+			// creating a new ClassDefinition object
+			ClassDefinition classdefinition
+				= new ClassDefinition(theClass, classFiles);
+			System.out.println(
+				"ClassDefinition object successfully created");
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}
+#prashant
+

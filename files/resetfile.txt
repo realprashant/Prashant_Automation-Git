@@ -1,9 +1,5 @@
-A
-// Java program to create new ClassDefinition object
-import java.lang.instrument.ClassDefinition;
-
-// driver class
-public class GFG {
+:Q
+{
 	// demoClass
 	static class demoClass {
 		void msg() { System.out.println("GeeksForGeeks"); }
@@ -23,7 +19,7 @@ public class GFG {
 			byte[] classFiles = { 0 };
 
 			// creating a new ClassDefinition object
-			ClassDefinitioen classdefinition
+			ClassDefinition classdefinition
 				= new ClassDefinition(theClass, classFiles);
 			System.out.println(
 				"ClassDefinition object successfully created");
@@ -33,5 +29,3 @@ public class GFG {
 		}
 	}
 }
-#prashant
-
